@@ -1,0 +1,9 @@
+palight\serverCosmetics\timers\TrampolineTimer$1.class
+palight\serverCosmetics\timers\CompanionTimer.class
+palight\serverCosmetics\timers\TrampolineTimer.class
+palight\serverCosmetics\timers\CompanionTimer$1.class
+palight\serverCosmetics\commands\CompanionCommand.class
+palight\serverCosmetics\cosmetics\companion\Companion.class
+palight\serverCosmetics\cosmetics\companion\CompanionManager.class
+palight\serverCosmetics\ServerCosmetics.class
+palight\serverCosmetics\timers\Timer.class

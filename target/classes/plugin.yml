@@ -1,0 +1,9 @@
+main: palight.serverCosmetics.ServerCosmetics
+name: ServerCosmetics
+version: 1.0.0
+description: Server Cosmetics
+api-version: "1.13"
+
+commands:
+  companion:
+    usage: "/companion"
