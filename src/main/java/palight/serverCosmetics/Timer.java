@@ -1,4 +1,4 @@
-package palight.serverCosmetics.timers;
+package palight.serverCosmetics;
 
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;

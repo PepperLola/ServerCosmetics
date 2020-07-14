@@ -24,7 +24,7 @@ public class CompanionCommand implements CommandExecutor {
         if (!(commandSender instanceof Player)) return false;
 
         Companion playerCompanion = new Companion(serverCosmetics, "TEST COMPANION", new ItemStack(Material.STONE, 1), (Player) commandSender);
-        companionManager.addCompanion(playerCompanion);
+        companionManager.addCompanion(((Player) commandSender).getUniqueId(), playerCompanion);
         return true;
     }
 }

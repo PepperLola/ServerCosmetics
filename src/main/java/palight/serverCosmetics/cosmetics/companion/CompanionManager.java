@@ -1,16 +1,17 @@
 package palight.serverCosmetics.cosmetics.companion;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class CompanionManager {
-    private List<Companion> companions = new ArrayList<>();
+    private Map<UUID, Companion> companions = new HashMap();
 
-    public void addCompanion(Companion companion) {
-        companions.add(companion);
+    public void addCompanion(UUID uuid, Companion companion) {
+        companions.put(uuid, companion);
     }
 
-    public List<Companion> getCompanions() {
+    public Map<UUID, Companion> getCompanions() {
         return companions;
     }
+
+    public void removeCompanion(UUID uuid) { companions.remove(uuid); }
 }

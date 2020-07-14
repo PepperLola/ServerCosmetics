@@ -1,6 +1,13 @@
 D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\cosmetics\companion\Companion.java
+D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\enums\ElevatorModes.java
 D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\ServerCosmetics.java
-D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\timers\Timer.java
+D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\listeners\PlayerListener.java
+D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\items\movement\MagicStickItem.java
+D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\Timer.java
+D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\listeners\PlayerJumpListener.java
 D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\timers\CompanionTimer.java
+D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\CustomListener.java
+D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\timers\TrampolineTimer.java
 D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\cosmetics\companion\CompanionManager.java
 D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\commands\CompanionCommand.java
+D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\items\CosmeticItem.java

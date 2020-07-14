@@ -2,10 +2,11 @@ package palight.serverCosmetics.timers;
 
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
-import palight.serverCosmetics.ServerCosmetics;
+import palight.serverCosmetics.Timer;
 import palight.serverCosmetics.cosmetics.companion.Companion;
 import palight.serverCosmetics.cosmetics.companion.CompanionManager;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CompanionTimer extends Timer {
@@ -24,7 +25,7 @@ public class CompanionTimer extends Timer {
         return new BukkitRunnable() {
             @Override
             public void run() {
-                List<Companion> companions = companionManager.getCompanions();
+                List<Companion> companions = new ArrayList<>(companionManager.getCompanions().values());
                 for (Companion companion : companions) {
                     companion.update();
                 }

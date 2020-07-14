@@ -8,16 +8,14 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
-import palight.serverCosmetics.cosmetics.companion.CompanionManager;
+import palight.serverCosmetics.Timer;
 
 public class TrampolineTimer extends Timer {
     private Plugin serverCosmetics;
-    private CompanionManager companionManager;
 
-    public TrampolineTimer(Plugin serverCosmetics, CompanionManager companionManager) {
+    public TrampolineTimer(Plugin serverCosmetics) {
         super(serverCosmetics);
         this.serverCosmetics = serverCosmetics;
-        this.companionManager = companionManager;
     }
 
     @Override
@@ -26,13 +24,24 @@ public class TrampolineTimer extends Timer {
             @Override
             public void run() {
                 for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
+                    if (onlinePlayer.isSneaking()) return;
                     Location blockLocation = onlinePlayer.getLocation().subtract(0, 1, 0);
                     World playerWorld = onlinePlayer.getWorld();
                     Material blockMaterial = playerWorld.getBlockAt(blockLocation).getType();
 
                     if (blockMaterial == Material.BLACK_CONCRETE) {
+                        int bounceLevel = 0;
+                        blockLocation = blockLocation.subtract(0, 1, 0);
+
+                        while (playerWorld.getBlockAt(blockLocation).getType() == Material.SLIME_BLOCK) {
+                            bounceLevel++;
+                            blockLocation = blockLocation.subtract(0, 1, 0);
+                        }
+
                         Vector playerVelocity = onlinePlayer.getVelocity();
-                        onlinePlayer.setVelocity(playerVelocity.setY(5));
+                        if (bounceLevel != 0) {
+                            onlinePlayer.setVelocity(playerVelocity.setY(bounceLevel));
+                        }
                     }
                 }
             }
