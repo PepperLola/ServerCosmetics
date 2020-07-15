@@ -1,4 +1,5 @@
 palight\serverCosmetics\timers\TrampolineTimer$1.class
+palight\serverCosmetics\util\MathUtil.class
 palight\serverCosmetics\items\movement\MagicStickItem.class
 palight\serverCosmetics\enums\ElevatorModes.class
 palight\serverCosmetics\timers\CompanionTimer.class

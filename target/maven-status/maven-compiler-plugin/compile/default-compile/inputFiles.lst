@@ -7,6 +7,7 @@ D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\Timer
 D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\listeners\PlayerJumpListener.java
 D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\timers\CompanionTimer.java
 D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\CustomListener.java
+D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\util\MathUtil.java
 D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\timers\TrampolineTimer.java
 D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\cosmetics\companion\CompanionManager.java
 D:\Minecraft\Plugins\ServerCosmetics\src\main\java\palight\serverCosmetics\commands\CompanionCommand.java
